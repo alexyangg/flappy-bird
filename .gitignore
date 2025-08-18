@@ -1,0 +1,26 @@
+# Visual Studio build files
+Debug/
+Release/
+x64/
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.log
+
+# Visual Studio project junk
+.vs/
+*.vcxproj.user
+*.aps
+*.ncb
+*.opendb
+*.sdf
+*.suo
+*.cache
+*.db
+
+# SFML binaries (don’t commit DLLs)
+*.dll
