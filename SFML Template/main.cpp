@@ -2,29 +2,8 @@
 // In Visual Studio, right-click your project > Properties > C/C++ > General > Additional Include Directories.
 // Add the path to your SFML 'include' folder, e.g., C:\SFML\include
 
-#include <SFML/Graphics.hpp>
+#include <iostream>
 
-#define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 1024
-
-int main()
-{
-    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "SFML Window");
-
-    while (window.isOpen())
-    {
-        // handle events
-
-        // update game logic
-
-        // draw
-        window.clear();
-
-        // draw SFML objects
-
-        window.display();
-    }
-       
+int main() {
     return EXIT_SUCCESS;
-
 }
