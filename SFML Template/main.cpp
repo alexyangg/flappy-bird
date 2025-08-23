@@ -4,6 +4,12 @@
 
 #include <iostream>
 
+#include "Game.hpp"
+
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+
 int main() {
+    MySFMLEngine::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "SFML Starter");
     return EXIT_SUCCESS;
 }
