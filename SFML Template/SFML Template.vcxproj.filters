@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\audio">
+      <UniqueIdentifier>{f3f0548f-bd0a-486c-93d1-1a253e1f95c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts">
+      <UniqueIdentifier>{7badffea-a268-4965-b48a-fb51bba24e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res">
+      <UniqueIdentifier>{9761e306-d2aa-4ec9-8e59-5c87fc4d1b0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -28,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,5 +59,92 @@
     <ClInclude Include="Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DEFINITIONS.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res\.gitkeep" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\res\bird-01.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\bird-02.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\bird-03.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\bird-04.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Bronze-Medal.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Game-Over-Body.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Game-Over-Title.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Gold-Medal.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\InvisibleScoringPipe.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\land.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\PipeDown.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\PipeUp.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Platinum-Medal.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\PlayButton.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\Silver-Medal.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\sky.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\SplashBackground.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+    <Image Include="Resources\res\title.png">
+      <Filter>Resource Files\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\fonts\arial.ttf">
+      <Filter>Resource Files\fonts</Filter>
+    </Font>
+    <Font Include="Resources\fonts\FlappyFont.ttf">
+      <Filter>Resource Files\fonts</Filter>
+    </Font>
+    <Font Include="Resources\fonts\Marker Felt.ttf">
+      <Filter>Resource Files\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\audio\Hit.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+    <Media Include="Resources\audio\Point.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+    <Media Include="Resources\audio\Wing.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
   </ItemGroup>
 </Project>

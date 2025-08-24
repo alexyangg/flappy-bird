@@ -1,4 +1,5 @@
 #include "Game.hpp"
+#include "SplashState.hpp"
 
 namespace MySFMLEngine {
 	Game::Game(int width, int height, std::string title) {
@@ -6,6 +7,7 @@ namespace MySFMLEngine {
 			title,
 			sf::Style::Close | sf::Style::Titlebar); // include close and titlebar in window
 
+		_data->machine.AddState(StateRef(new SplashState(this->_data)));
 		this->Run();
 	}
 
