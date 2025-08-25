@@ -4,6 +4,7 @@
 
 #include "State.hpp"
 #include "../Engine/Game.hpp"
+#include "../GameObjects/Pipe.hpp"
 
 namespace MySFMLEngine {
 	class GameState : public State { // Inherit from State base class
@@ -21,5 +22,6 @@ namespace MySFMLEngine {
 
 		sf::Sprite _background;
 
+		Pipe* pipe;
 	};
 }
