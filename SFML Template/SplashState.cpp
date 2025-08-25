@@ -14,6 +14,10 @@ namespace MySFMLEngine {
 		_data->assets.LoadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
 	
 		_background.setTexture(this->_data->assets.GetTexture("Splash State Background"));
+
+		// Center the background
+		_background.setPosition((SCREEN_WIDTH / 2) - (_background.getGlobalBounds().width / 2), 
+			(SCREEN_HEIGHT / 2) - (_background.getGlobalBounds().height / 2));
 	}
 
 	void SplashState::HandleInput() {
