@@ -1,8 +1,9 @@
 #include <sstream>
 #include <iostream>
 
-#include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
+#include "MainMenuState.hpp"
+#include "GameState.hpp"
 
 namespace MySFMLEngine {
 	MainMenuState::MainMenuState(GameDataRef data) : _data(data) { // member initializer list
@@ -38,8 +39,7 @@ namespace MySFMLEngine {
 			if (_data->input.IsSpriteClicked(_playButton,
 				sf::Mouse::Left, 
 				_data->window)) {
-				std::cout << "Go to Game State" << std::endl;
-				// _data->machine.AddState(StateRef(new GameState(_data)), true);
+				_data->machine.AddState(StateRef(new GameState(_data)), true);
 			}
 		}
 	}
