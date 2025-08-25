@@ -6,9 +6,9 @@
 #include "Game.hpp"
 
 namespace MySFMLEngine {
-	class SplashState : public State { // Inherit from State base class
+	class MainMenuState : public State { // Inherit from State base class
 	public:
-		SplashState(GameDataRef data);
+		MainMenuState(GameDataRef data);
 
 		void Init();
 
@@ -19,9 +19,9 @@ namespace MySFMLEngine {
 	private:
 		GameDataRef _data;
 
-		sf::Clock _clock;
-
 		sf::Sprite _background;
+		sf::Sprite _title;
+		sf::Sprite _playButton;
 
 	};
 }

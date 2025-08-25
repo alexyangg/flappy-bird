@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "SplashState.hpp"
+#include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
 
 namespace MySFMLEngine {
@@ -27,15 +28,16 @@ namespace MySFMLEngine {
 
 	void SplashState::Update(float dt) {
 		if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME) {
-			// Switch to Main Menu state
-			std::cout << "Switching to Main Menu State" << std::endl;
-			// _data->machine.AddState(StateRef(new MainMenuState(_data)), true);
+			// Switch to Main Menu 
+			_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
 		}
 	}
 
 	void SplashState::Draw(float dt) {
 		_data->window.clear();
+
 		_data->window.draw(_background);
+
 		_data->window.display();
 	}
 }
