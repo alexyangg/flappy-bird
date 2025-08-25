@@ -1,9 +1,9 @@
 #include <sstream>
 #include <iostream>
 
+#include "../DEFINITIONS.hpp"
 #include "SplashState.hpp"
 #include "MainMenuState.hpp"
-#include "DEFINITIONS.hpp"
 
 namespace MySFMLEngine {
 	SplashState::SplashState(GameDataRef data) : _data(data) { // member initializer list

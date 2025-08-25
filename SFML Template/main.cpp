@@ -4,8 +4,8 @@
 
 #include <iostream>
 
-#include "Game.hpp"
 #include "DEFINITIONS.hpp"
+#include "./Engine/Game.hpp"
 
 int main() {
     MySFMLEngine::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Flappy Bird");

@@ -3,12 +3,12 @@
 #include <SFML/Graphics.hpp>
 
 #include "State.hpp"
-#include "Game.hpp"
+#include "../Engine/Game.hpp"
 
 namespace MySFMLEngine {
-	class MainMenuState : public State { // Inherit from State base class
+	class GameState : public State { // Inherit from State base class
 	public:
-		MainMenuState(GameDataRef data);
+		GameState(GameDataRef data);
 
 		void Init();
 
@@ -20,8 +20,6 @@ namespace MySFMLEngine {
 		GameDataRef _data;
 
 		sf::Sprite _background;
-		sf::Sprite _title;
-		sf::Sprite _playButton;
 
 	};
 }

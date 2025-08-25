@@ -4,7 +4,7 @@
 #include <stack>
 
 // Use quotes for local headers instead of angle brackets
-#include "State.hpp"
+#include "../States/State.hpp"
 
 namespace MySFMLEngine {
 	typedef std::unique_ptr<State> StateRef;

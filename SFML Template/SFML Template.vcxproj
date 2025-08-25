@@ -129,25 +129,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AssetManager.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameState.cpp" />
-    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Engine\AssetManager.cpp" />
+    <ClCompile Include="Engine\Game.cpp" />
+    <ClCompile Include="Engine\InputManager.cpp" />
+    <ClCompile Include="Engine\StateMachine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainMenuState.cpp" />
-    <ClCompile Include="SplashState.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="States\GameState.cpp" />
+    <ClCompile Include="States\MainMenuState.cpp" />
+    <ClCompile Include="States\SplashState.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AssetManager.hpp" />
     <ClInclude Include="DEFINITIONS.hpp" />
-    <ClInclude Include="Game.hpp" />
-    <ClInclude Include="GameState.hpp" />
-    <ClInclude Include="InputManager.hpp" />
-    <ClInclude Include="MainMenuState.hpp" />
-    <ClInclude Include="SplashState.hpp" />
-    <ClInclude Include="State.hpp" />
-    <ClInclude Include="StateMachine.hpp" />
+    <ClInclude Include="Engine\AssetManager.hpp" />
+    <ClInclude Include="Engine\Game.hpp" />
+    <ClInclude Include="Engine\InputManager.hpp" />
+    <ClInclude Include="Engine\StateMachine.hpp" />
+    <ClInclude Include="States\GameState.hpp" />
+    <ClInclude Include="States\MainMenuState.hpp" />
+    <ClInclude Include="States\SplashState.hpp" />
+    <ClInclude Include="States\State.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\res\.gitkeep" />

@@ -1,7 +1,7 @@
 #include <sstream>
 #include <iostream>
 
-#include "DEFINITIONS.hpp"
+#include "../DEFINITIONS.hpp"
 #include "MainMenuState.hpp"
 #include "GameState.hpp"
 

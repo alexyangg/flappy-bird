@@ -3,12 +3,12 @@
 #include <SFML/Graphics.hpp>
 
 #include "State.hpp"
-#include "Game.hpp"
+#include "../Engine/Game.hpp"
 
 namespace MySFMLEngine {
-	class GameState : public State { // Inherit from State base class
+	class SplashState : public State { // Inherit from State base class
 	public:
-		GameState(GameDataRef data);
+		SplashState(GameDataRef data);
 
 		void Init();
 
@@ -18,6 +18,8 @@ namespace MySFMLEngine {
 
 	private:
 		GameDataRef _data;
+
+		sf::Clock _clock;
 
 		sf::Sprite _background;
 

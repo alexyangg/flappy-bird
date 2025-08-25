@@ -1,7 +1,7 @@
 #include <sstream>
 #include <iostream>
 
-#include "DEFINITIONS.hpp"
+#include "../DEFINITIONS.hpp"
 #include "GameState.hpp"
 
 namespace MySFMLEngine {
