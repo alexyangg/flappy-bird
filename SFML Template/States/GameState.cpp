@@ -3,6 +3,7 @@
 
 #include "../DEFINITIONS.hpp"
 #include "GameState.hpp"
+#include "GameOverState.hpp"
 
 namespace MySFMLEngine {
 	GameState::GameState(GameDataRef data) : _data(data) { // member initializer list
@@ -20,7 +21,8 @@ namespace MySFMLEngine {
 
 		while (_data->window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed) {
-				_data->window.close();
+				//_data->window.close();
+				_data->machine.AddState(StateRef(new GameOverState(_data)), true); // temporary
 			}
 		}
 	}
