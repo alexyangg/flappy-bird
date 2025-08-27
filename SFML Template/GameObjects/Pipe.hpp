@@ -3,6 +3,7 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
+#include "../DEFINITIONS.hpp"
 #include "../Engine/Game.hpp"
 
 namespace MySFMLEngine {
@@ -10,6 +11,10 @@ namespace MySFMLEngine {
 	public:
 		Pipe(GameDataRef data);
 
+		void SpawnBottomPipe();
+		void SpawnTopPipe();
+		void SpawnInvisiblePipe(); // For collision detection
+		void MovePipes(float dt);
 		void DrawPipes();
 
 	private:
