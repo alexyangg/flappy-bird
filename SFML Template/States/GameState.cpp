@@ -28,20 +28,19 @@ namespace MySFMLEngine {
 				//_data->window.close();
 				_data->machine.AddState(StateRef(new GameOverState(_data)), true); // temporary
 			}
-
-			// temporary for testing
-			if (_data->input.IsSpriteClicked(_background,
-				sf::Mouse::Left,
-				_data->window)) {
-				pipe->SpawnInvisiblePipe();
-				pipe->SpawnTopPipe();
-				pipe->SpawnBottomPipe();
-			}
 		}
 	}
 
 	void GameState::Update(float dt) {
 		pipe->MovePipes(dt);
+
+		if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY) {
+			pipe->SpawnInvisiblePipe();
+			pipe->SpawnTopPipe();
+			pipe->SpawnBottomPipe();
+
+			clock.restart();
+		}
 	}
 
 	void GameState::Draw(float dt) {

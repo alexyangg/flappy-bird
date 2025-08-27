@@ -23,5 +23,7 @@ namespace MySFMLEngine {
 		sf::Sprite _background;
 
 		Pipe* pipe;
+
+		sf::Clock clock;
 	};
 }
