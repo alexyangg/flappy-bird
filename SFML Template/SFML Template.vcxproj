@@ -133,6 +133,7 @@
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\InputManager.cpp" />
     <ClCompile Include="Engine\StateMachine.cpp" />
+    <ClCompile Include="GameObjects\Land.cpp" />
     <ClCompile Include="GameObjects\Pipe.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="States\GameOverState.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="Engine\Game.hpp" />
     <ClInclude Include="Engine\InputManager.hpp" />
     <ClInclude Include="Engine\StateMachine.hpp" />
+    <ClInclude Include="GameObjects\Land.hpp" />
     <ClInclude Include="GameObjects\Pipe.hpp" />
     <ClInclude Include="States\GameOverState.hpp" />
     <ClInclude Include="States\GameState.hpp" />
