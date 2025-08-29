@@ -2,14 +2,17 @@
 #include <iostream>
 
 namespace MySFMLEngine {
-	Pipe::Pipe(GameDataRef data) : _data(data) {}
+	Pipe::Pipe(GameDataRef data) : _data(data) {
+		_landHeight = _data->assets.GetTexture("Land").getSize().y;
+		_pipeSpawnYOffset = 0;
+	}
 
 	void Pipe::SpawnBottomPipe() {
 		sf::Sprite sprite(_data->assets.GetTexture("Pipe Up"));
 
 		// spawns at bottom right corner of the screen
 		sprite.setPosition(_data->window.getSize().x,
-			_data->window.getSize().y - sprite.getGlobalBounds().height
+			_data->window.getSize().y - sprite.getGlobalBounds().height - _pipeSpawnYOffset
 		);
 
 		pipeSprites.push_back(sprite);
@@ -19,7 +22,7 @@ namespace MySFMLEngine {
 		sf::Sprite sprite(_data->assets.GetTexture("Pipe Down"));
 
 		// spawns at top right corner of the screen
-		sprite.setPosition(_data->window.getSize().x, 0);
+		sprite.setPosition(_data->window.getSize().x, -_pipeSpawnYOffset); // negative y offset to move pipe up
 
 		pipeSprites.push_back(sprite);
 	}
@@ -57,5 +60,9 @@ namespace MySFMLEngine {
 		for (unsigned short int i = 0; i < pipeSprites.size(); i++) {
 			_data->window.draw(pipeSprites[i]);
 		}
+	}
+
+	void Pipe::RandomizePipeOffset() {
+		_pipeSpawnYOffset = rand() % _landHeight;
 	}
 }

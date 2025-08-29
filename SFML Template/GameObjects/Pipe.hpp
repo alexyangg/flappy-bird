@@ -16,9 +16,13 @@ namespace MySFMLEngine {
 		void SpawnInvisiblePipe(); // For collision detection
 		void MovePipes(float dt);
 		void DrawPipes();
+		void RandomizePipeOffset();
 
 	private:
 		GameDataRef _data;
 		std::vector<sf::Sprite> pipeSprites;
+
+		int _landHeight;
+		int _pipeSpawnYOffset;
 	};
 }
