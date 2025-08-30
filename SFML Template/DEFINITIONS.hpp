@@ -25,3 +25,5 @@
 #define BIRD_FRAME_2_FILEPATH "Resources/res/bird-02.png"
 #define BIRD_FRAME_3_FILEPATH "Resources/res/bird-03.png"
 #define BIRD_FRAME_4_FILEPATH "Resources/res/bird-04.png"
+
+#define BIRD_ANIMATION_DURATION 0.4f
