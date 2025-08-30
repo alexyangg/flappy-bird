@@ -28,5 +28,7 @@ namespace MySFMLEngine {
 		sf::Clock _movementClock; // time since last movement change
 
 		int _birdState;
+
+		float _rotation;
 	};
 }
