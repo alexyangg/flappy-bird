@@ -133,6 +133,7 @@
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\InputManager.cpp" />
     <ClCompile Include="Engine\StateMachine.cpp" />
+    <ClCompile Include="GameObjects\Bird.cpp" />
     <ClCompile Include="GameObjects\Land.cpp" />
     <ClCompile Include="GameObjects\Pipe.cpp" />
     <ClCompile Include="main.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="Engine\Game.hpp" />
     <ClInclude Include="Engine\InputManager.hpp" />
     <ClInclude Include="Engine\StateMachine.hpp" />
+    <ClInclude Include="GameObjects\Bird.hpp" />
     <ClInclude Include="GameObjects\Land.hpp" />
     <ClInclude Include="GameObjects\Pipe.hpp" />
     <ClInclude Include="States\GameOverState.hpp" />

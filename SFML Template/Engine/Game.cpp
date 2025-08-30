@@ -1,3 +1,6 @@
+#include <cstdlib>
+#include <time.h>
+
 #include "Game.hpp"
 #include "../States/SplashState.hpp"
 
@@ -6,6 +9,8 @@ namespace MySFMLEngine {
 		_data->window.create(sf::VideoMode(width, height),
 			title,
 			sf::Style::Close | sf::Style::Titlebar); // include close and titlebar in window
+
+		srand(time(NULL)); // seed random number generator
 
 		_data->machine.AddState(StateRef(new SplashState(this->_data)));
 		this->Run();

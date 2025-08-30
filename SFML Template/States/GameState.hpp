@@ -6,6 +6,7 @@
 #include "../Engine/Game.hpp"
 #include "../GameObjects/Pipe.hpp"
 #include "../GameObjects/Land.hpp"
+#include "../GameObjects/Bird.hpp"
 
 namespace MySFMLEngine {
 	class GameState : public State { // Inherit from State base class
@@ -25,6 +26,7 @@ namespace MySFMLEngine {
 
 		Pipe* pipe;
 		Land* land;
+		Bird* bird;
 
 		sf::Clock clock;
 	};
