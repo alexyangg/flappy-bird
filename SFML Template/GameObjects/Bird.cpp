@@ -11,6 +11,11 @@ namespace MySFMLEngine {
 
 		_birdSprite.setTexture(_animationFrames[_animationIterator]);
 		
+		// Position bird in the center-left of the screen
+		_birdSprite.setPosition((_data->window.getSize().x / 4) - (_birdSprite.getGlobalBounds().width / 2), 
+			(_data->window.getSize().y / 2) - (_birdSprite.getGlobalBounds().height / 2));
+	
+		_birdState = BIRD_STATE_STILL;
 	}
 
 	void Bird::Draw() {
@@ -30,5 +35,24 @@ namespace MySFMLEngine {
 
 			_animationClock.restart();
 		}
+	}
+
+	void Bird::Update(float dt) {
+		if (_birdState == BIRD_STATE_FALLING) {
+			_birdSprite.move(0, GRAVITY * dt);
+		}
+		else if (_birdState == BIRD_STATE_FLYING) {
+			_birdSprite.move(0, -FLYING_SPEED * dt);
+		}
+
+		if (_movementClock.getElapsedTime().asSeconds() > FLYING_DURATION) {
+			_birdState = BIRD_STATE_FALLING;
+			_movementClock.restart();
+		}
+	}
+
+	void Bird::Tap() {
+		_movementClock.restart();
+		_birdState = BIRD_STATE_FLYING;
 	}
 }

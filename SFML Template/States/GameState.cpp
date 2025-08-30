@@ -35,6 +35,10 @@ namespace MySFMLEngine {
 				//_data->window.close();
 				_data->machine.AddState(StateRef(new GameOverState(_data)), true); // temporary
 			}
+
+			if (_data->input.IsSpriteClicked(_background, sf::Mouse::Left, _data->window)) {
+				bird->Tap();
+			}
 		}
 	}
 
@@ -53,6 +57,7 @@ namespace MySFMLEngine {
 		}
 
 		bird->Animate(dt);
+		bird->Update(dt);
 	}
 
 	void GameState::Draw(float dt) {
